@@ -315,4 +315,4 @@ class ViraHomePage extends StatelessWidget {
       Positioned(bottom: 150, left: 150, child: Text('💫', style: TextStyle(fontSize: 25, color: starColor.withOpacity(0.5)))),
     ];
   }
-
+}
