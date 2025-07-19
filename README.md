@@ -17,11 +17,11 @@
 
 ## Features
 
-✅ Offline SOS alerting via LoRa  
-✅ Real-time volunteer dashboard (Flutter + Firebase)  
-✅ Essential supply & sanitary kit management  
-✅ Targeted for disaster relief zones (Kerala, India)  
-✅ Future-ready for smart automation using ML
+ Offline SOS alerting via LoRa  
+ Real-time volunteer dashboard (Flutter + Firebase)  
+ Essential supply & sanitary kit management  
+ Targeted for disaster relief zones (Kerala, India)  
+ Future-ready for smart automation using ML
 
 ---
 
@@ -36,7 +36,69 @@
 
 ## How to Setup (Volunteer Dashboard)
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/DevikaSajith/VIRA.git
-cd VIRA
+1. Clone the Repository
+
+    ```bash
+    git clone https://github.com/DevikaSajith/VIRA.git
+    cd VIRA
+    ```
+
+2. Install Flutter Dependencies
+
+    ```bash
+    flutter pub get
+    ```
+
+3. Firebase Setup
+
+    - Create a Firebase project → enable **Authentication** (Email/Password) and **Realtime Database**.
+    - Add `firebase_options.dart` to the `lib/` directory after Firebase setup.
+    - Recommended **Firebase Realtime Database Rules**:
+
+    ```json
+    {
+      "rules": {
+        "contacts": { ".read": "auth != null", ".write": "auth != null" },
+        "messages": { ".read": "auth != null", ".write": "auth != null" },
+        "stock_items": { ".read": "auth != null", ".write": "auth != null" },
+        "support": { ".read": "auth != null", ".write": "auth != null" }
+      }
+    }
+    ```
+
+4. Run the Application
+
+    ```bash
+    flutter run
+    ```
+
+---
+
+## Team
+
+- [Devika P Sajith](https://github.com/DevikaSajith)
+- [Jayalakshmy Jayakrishnan](https://github.com/JayalakshmyJayakrishnan)
+- [Pavithra Deepu E](https://github.com/pavithradeepue)
+- [Ayisha Sulaiman](https://github.com/Ayishacode)
+
+---
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature-name`)
+3. Commit your changes
+4. Push and submit a Pull Request
+
+---
+
+## License
+
+Licensed under the [MIT License](LICENSE).
+
+---
+
+## Contact
+
+📧 **Devika P Sajith** – devikasajith710@gmail.com  
+
