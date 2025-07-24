@@ -52,5 +52,71 @@ In emergency zones, women often face:
 - **Firebase** backend for cloud data logging and analytics
 - **Low-bandwidth** dashboard design with alert queue & resolution tracking
 
+## 🧪 System Architecture
+
+VIRA is designed as an **offline-first, duplex emergency communication system** using LoRa. Here's how it works:
+
+### 📶 Communication Flow
+
+1. **User Interaction**  
+   - The user presses a dedicated button for:
+     - 🏥 Medical Help  
+     - 🛍️ Essential Supplies  
+     - 🛡️ Safety Concern  
+
+2. **Wearable Transmission**  
+   - The wearable device (ESP32 + LoRa):
+     - Packages a message with:
+       - Device ID (anonymized)
+       - Alert Type
+       - Timestamp  
+     - Sends it to a nearby **LoRa Base Station**
+
+3. **Acknowledgment System**  
+   - Base station sends back an **ACK signal**
+   - The wearable **blinks LED or vibrates** to confirm receipt
+
+4. **Cloud Sync (When Online)**  
+   - Base Station syncs all received alerts to **Firebase**
+   - Alerts are visualized on a **Flutter-powered Dashboard**
+
+5. **Dashboard Functionality**  
+   - Real-time alert display with filters (type, time, status)
+   - Alerts remain “active” until marked as **resolved**
+   - Built to run on **low-bandwidth networks**
+
+---
+
+## 🌍 Impact & Use Cases
+
+### 🎯 Immediate Impact
+- 📡 Seamless communication even in network-dead zones
+- 🧕 Enables women and vulnerable individuals to seek help privately
+- ⏱️ Reduces response time and manual reporting delays
+
+### 🔭 Long-Term Vision
+- 🔄 Expand into child & elderly safety systems
+- 🌐 Build a **state-level LoRa disaster alert mesh**
+- 🏥 Support NGO and government adoption for large-scale deployment
+
+---
+
+## ⚙️ Challenges & Solutions
+
+| 🧩 Challenge                         | ✅ Solution                                                   |
+|-------------------------------------|---------------------------------------------------------------|
+| LoRa reliability in dense terrain   | Use of directional antennas, mesh network for coverage        |
+| Missed/delayed acknowledgments      | Retry logic with timeout and fallback notification            |
+| Power consumption in emergencies    | ESP32 deep sleep + optimized LED triggers                     |
+| Balancing cost and durability       | IP65+ enclosures, modular design, and use of ABS plastics      |
+
+---
+
+## 👨‍👩‍👧‍👦 Team – FourLoops
+
+- 🛠️ **Jayalakshmy Jayakrishnan** – Hardware Developer  
+- 🛠️ **Ayisha Sulaiman** – Hardware Developer  
+- 💻 **Devika P Sajith** – Flutter App & Firebase Developer  
+- 🔗 **Pavithra Deepu E** – Backend Integration & Coordination  
 
 
