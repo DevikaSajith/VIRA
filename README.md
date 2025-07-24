@@ -55,19 +55,6 @@ In emergency zones, women often face:
 ## 🧪 System Architecture
 
 VIRA is designed as an **offline-first, duplex emergency communication system** using LoRa. Here's how it works:
-[User Button Press]
-↓
-[Wearable Device (LoRa Sender)]
-↓
-[LoRa Transmission]
-↓
-[Base Station (LoRa Receiver)]
-↓
-[ACK → LED/Vibration Feedback]
-↓
-[Firebase Cloud Storage]
-↓
-[Flutter Web Dashboard]
 
 ### 📶 Communication Flow
 
