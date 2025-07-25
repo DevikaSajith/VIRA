@@ -198,7 +198,7 @@ firebase deploy
 
 ## Repositories
 
-  * **Flutter App:** [https://github.com/DevikaSajith/Vira\_dashboard](https://github.com/DevikaSajith/Vira_dashboard)
+  * **Flutter App:** [https://vira-93d85.web.app/]( https://vira-93d85.web.app/)
   * **Website:** [https://devikasajith.github.io/Vira\_website](https://devikasajith.github.io/Vira_website)
 
 -----
