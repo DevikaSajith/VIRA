@@ -70,7 +70,7 @@ VIRA is designed as an **offline-first, duplex emergency communication system** 
        - Device ID (anonymized)
        - Alert Type
        - Timestamp  
-     - Sends it to a nearby **LoRa Base Station**
+     - Sends it to a nearby **LoRa Base Station** in the supply unit
 
 3. **Acknowledgment System**  
    - Base station sends back an **ACK signal**
@@ -80,7 +80,14 @@ VIRA is designed as an **offline-first, duplex emergency communication system** 
    - Base Station syncs all received alerts to **Firebase**
    - Alerts are visualized on a **Flutter-powered Dashboard**
 
-5. **Dashboard Functionality**  
+5. **Cloud Sync (When Offline)**
+   - The base station stores the messages locally.
+   - Nearby volunteers can connect via Bluetooth to the base station using their phone.
+   - The VIRA app fetches the stored messages from the base station into the phone's local storage (offline) can be viewed in the app.
+   - Once internet is back, the phone can sync the data to Firebase.
+   - Alerts are visualized on a **Flutter-powered Dashboard**
+
+7. **Dashboard Functionality**  
    - Real-time alert display with filters (type, time, status)
    - Alerts remain “active” until marked as **resolved**
    - Built to run on **low-bandwidth networks**
