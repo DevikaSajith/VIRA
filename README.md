@@ -35,7 +35,7 @@ VIRA ensures silent, private, and **offline** distress communication for faster,
 
   * One-touch emergency alert buttons for **medical**, **essentials**, and **safety** needs
   * Offline communication through **LoRa** or **Bluetooth Mesh**
-  * **LED and vibration feedback** for real-time delivery acknowledgment
+  * **LED  feedback** for real-time delivery acknowledgment
   * **ACK-based duplex system** to ensure delivery confirmation
   * Privacy-preserving system using anonymized Device IDs and optional NFC tags
   * **Firebase integration** for alert logging and analysis
