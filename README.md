@@ -24,7 +24,7 @@ In emergency zones, women often face:
 
 ---
 
-## 🌐 Website  
+## 🌐 App  
 🔗 [https://vira-93d85.web.app](https://vira-93d85.web.app)
     
 ---
