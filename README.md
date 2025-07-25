@@ -23,8 +23,9 @@ In emergency zones, women often face:
 > VIRA ensures silent, private, and **offline** distress communication for faster, safer relief.
 
 ---
-## Website 
-    https://vira-93d85.web.app/
+
+## 🌐 Website  
+🔗 [https://vira-93d85.web.app](https://vira-93d85.web.app)
     
 ---
 
